@@ -1,0 +1,36 @@
+﻿@model EntityLayer.Concrete.Malzeme
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Malzeme</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MalzemeAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MalzemeAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MalzemeMiktar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MalzemeMiktar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MiktarKategori)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MiktarKategori)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MalzemeID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
